@@ -1,0 +1,58 @@
+<DOCTYPE! html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+
+		.boxA{
+			width:200px;
+  			height:200px;
+  			background:rgba(290,0,0,0.5);
+ 			position:absolute;
+  			top:100px;
+  			left:50%;
+  			margin-left:-500px;	
+  		}
+      .marker{
+      width:200px;
+        height:200px;
+        background:rgba(290,0,0,0.5);
+      position:absolute;
+        top:100px;
+        left:50%;
+        margin-left:-500px; 
+      }
+
+
+  		.boxA{
+  			-webkit-animation:movingboxA 5s infinite;
+		}
+    
+
+		@-webkit-keyframes movingboxA{
+  		0%{
+        transform: translate(0px,0px);
+      }
+      25%{
+        transform: translate(200px,0px);
+      }
+      50%{
+      transform: translate(200px,200px);
+      }
+      75%{
+      transform: translate(0px,200px);
+      }
+      
+
+
+	</style>
+
+</head>
+<body>
+<div class="container">
+	<div class="boxA"></div>
+  <div class="marker"></div>
+</div>
+</body>
+</html>
